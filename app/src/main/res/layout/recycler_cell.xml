@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/textViewDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@id/checkBox"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Fix curtains" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@id/checkBox"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        tools:text="Fix the curtain rail in the bedroom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
